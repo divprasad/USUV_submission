@@ -1,0 +1,7 @@
+# Ignore everything inside the helpers/ folder
+helpers/
+
+# Ignore any file that starts with "SECRET_" in any subdirectory
+*/SECRET_*
+
+.DS_Store

@@ -150,7 +150,7 @@ def tsv2XML(tsvInFile, xmlOutFile):
                 create_sample_attribute(sample_attributes, "publication", pub)
                 if insdc_acc != "IGNORE": # Add optional attributes if applicable
                     create_sample_attribute(sample_attributes, "INSDC accession", insdc_acc)
-
+                create_sample_attribute(sample_attributes, "ENA-CHECKLIST", "ERC000033")
 
     except FileNotFoundError:
         print(f"Error: The file '{tsvInFile}' does not exist.")

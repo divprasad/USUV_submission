@@ -79,6 +79,10 @@
         <TAG>publication</TAG>
         <VALUE>greatpaper_123</VALUE>
       </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000033</VALUE>
+      </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
   <SAMPLE alias="ran80858_bike08" center_name="One Health Pact Consortium (2020–2022), EcoAlert Collaborative Team (2016–2019)">
@@ -159,6 +163,10 @@
       <SAMPLE_ATTRIBUTE>
         <TAG>publication</TAG>
         <VALUE>greatpaper_123</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000033</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
@@ -241,6 +249,10 @@
         <TAG>publication</TAG>
         <VALUE>greatpaper_567</VALUE>
       </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000033</VALUE>
+      </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
   <SAMPLE alias="ran80837_bike29" center_name="One Health Pact Consortium (2020–2022), EcoAlert Collaborative Team (2016–2019)">
@@ -321,6 +333,10 @@
       <SAMPLE_ATTRIBUTE>
         <TAG>publication</TAG>
         <VALUE>greatpaper_123</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000033</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
@@ -403,6 +419,10 @@
         <TAG>publication</TAG>
         <VALUE>greatpaper_567</VALUE>
       </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000033</VALUE>
+      </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>
   <SAMPLE alias="ran80844_bike59" center_name="One Health Pact Consortium (2020–2022), EcoAlert Collaborative Team (2016–2019)">
@@ -483,6 +503,10 @@
       <SAMPLE_ATTRIBUTE>
         <TAG>publication</TAG>
         <VALUE>excellentpaper_1337</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000033</VALUE>
       </SAMPLE_ATTRIBUTE>
     </SAMPLE_ATTRIBUTES>
   </SAMPLE>

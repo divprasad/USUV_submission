@@ -3,5 +3,6 @@ helpers/
 
 # Ignore any file that starts with "SECRET_" in any subdirectory
 */SECRET_*
+*/ERROR_*
 
 .DS_Store

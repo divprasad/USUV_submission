@@ -1,6 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./exp/ERROR_create_exp_",
-        "./exp/ERROR_create_exp_"
-    ]
-}

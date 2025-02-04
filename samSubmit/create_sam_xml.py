@@ -14,7 +14,6 @@ Options:
                         Specify the path to the input TSV file containing sample metadata.
                         The file must include all required fields for generating the sample metadata XML.
 
-
 # CHECK LIST
 
 

@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# makexml.sh - Script to generate and submit ENA XML files
+# make-submit-xml.sh - Script to generate and submit ENA XML files
 #
 # Usage:
-#   makexml.sh -t  (Run in test mode, default)
-#   makexml.sh -s  (Run in submission mode)
-#   makexml.sh -h  (Display this help message)
+#   make-submit-xml.sh -t  (Run in test mode, default)
+#   make-submit-xml.sh -s  (Run in submission mode)
+#   make-submit-xml.sh -h  (Display this help message)
 
 # READ THE DOCS!
 # https://ena-docs.readthedocs.io/en/latest/submit/reads/programmatic.html
+# https://ena-docs.readthedocs.io/en/latest/update/metadata.html
 
 # Exit immediately if a command fails
 set -e
@@ -52,8 +53,13 @@ echo "Created sam.xml"
 date
 
 echo "Submitting sample XML..."
-rm -f samLog.txt
-#curl -u U_NAME:PASS_WORD -F "SUBMISSION=@0.add.submission.xml" -F "SAMPLE=@sam.xml" "$url" >> samLog.txt 2>&1
+rm -f *samLog.txt
+
+# For submiting new metadata objects
+# curl -u U_NAME:PASS_WORD -F "SUBMISSION=@add_submission.xml" -F "SAMPLE=@sam.xml" "$url" >> submit_samLog.txt 2>&1
+
+# For updating existing metadata objects
+# curl -u U_NAME:PASS_WORD -F "SUBMISSION=@modify_submission.xml" -F "SAMPLE=@sam.xml" "$url" >> modify_samLog.txt 2>&1
 echo "Submitted sam.xml"
 date
 
@@ -76,8 +82,14 @@ date
 # Submit RUN and EXPERIMENT data
 cd ../runExpSubmit/
 echo "Submitting experiment and run XML..."
-rm -f runExpLog.txt
-#curl -u U_NAME:PASS_WORD -F "SUBMISSION=@0.add.submission.xml" -F "RUN=@run.xml" -F "EXPERIMENT=@exp.xml" "$url" >> runExpLog.txt 2>&1
+rm -f *runExpLog.txt
+
+# For submiting new metadata objects
+curl -u U_NAME:PASS_WORD -F "SUBMISSION=@add_submission.xml" -F "RUN=@run.xml" -F "EXPERIMENT=@exp.xml" "$url" >> submit_runExpLog.txt 2>&1
+
+# For updating existing metadata objects
+# curl -u U_NAME:PASS_WORD -F "SUBMISSION=@modify_submission.xml" -F "RUN=@run.xml" -F "EXPERIMENT=@exp.xml" "$url" >> modify_runExpLog.txt 2>&1
+
 echo "Submitted run.xml and exp.xml"
 date
 

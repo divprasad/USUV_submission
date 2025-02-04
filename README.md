@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository contains scripts and data for generating and submitting XML files to the European Nucleotide Archive (ENA). The scripts convert TSV files containing metadata into XML files with the required structure for submitting experiment, run, and sample metadata objects to ENA.
+This repository is specific for Usutu virus submission as it has been adapted accordingly.
+
+It contains scripts and dummy data for generating and submitting XML files to the European Nucleotide Archive (ENA). The scripts convert TSV files containing metadata into XML files with the required structure and submit the experiment, run, and sample metadata objects all in one go.
 
 ## Repository Structure
 
@@ -33,34 +35,34 @@ This repository contains scripts and data for generating and submitting XML file
 
 ###
 
-make-submit-xml.sh
-
-
-
-This script generates and submits ENA XML files.
+The wrapper script make-submit-xml.sh generates and submit (or modify existing) ENA metadata objects in XML format, using programmatic submission (https://ena-docs.readthedocs.io/en/latest/submit/reads/programmatic.html).
 
 **Usage:**
 ```sh
-makexml.sh -t  # Run in test mode (default)
-makexml.sh -s  # Run in submission mode
-makexml.sh -h  # Display help message
+make-submit-xml.sh -t  # Run in test mode (default)
+make-submit-xml.sh -s  # Run in submission mode
+make-submit-xml.sh -h  # Display help message
+```
+
+## Installation
+
+To install the required dependencies, run:
+```sh
+pip install lxml
 ```
 
 ###
 
-create_exp_xml.py
+create_sam_xml.py script converts the sam.tsv file into sam.xml file.
 
+**Usage:**
+```sh
+python3 create_sam_xml.py
+```
 
+###
 
-This script converts an
-
-exp.tsv
-
- file into an
-
-exp.xml
-
- file.
+create_exp_xml.py script converts the exp.tsv file into an exp.xml file.
 
 **Usage:**
 ```sh
@@ -69,51 +71,11 @@ python3 create_exp_xml.py
 
 ###
 
-create_run_xml.py
-
-
-
-This script converts a
-
-run.tsv
-
- file into a
-
-run.xml
-
- file.
+create_run_xml.py script converts the run.tsv file into run.xml file.
 
 **Usage:**
 ```sh
 python3 create_run_xml.py
-```
-
-###
-
-create_sam_xml.py
-
-
-
-This script converts a
-
-sam.tsv
-
- file into a
-
-sam.xml
-
- file.
-
-**Usage:**
-```sh
-python3 create_sam_xml.py 
-```
-
-## Installation
-
-To install the required dependencies, run:
-```sh
-pip install lxml
 ```
 
 ## Notes

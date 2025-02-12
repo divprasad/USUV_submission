@@ -9,31 +9,39 @@ It contains scripts and dummy data for generating and submitting XML files to th
 ## Repository Structure
 
 ```
-.
+this_repo
 ├── .gitignore
+├── make-submit-xml.sh
 ├── exp/
 │   ├── create_exp_xml.py
 │   ├── exp.tsv
-│   ├── exp.xml
-├── make-submit-xml.sh
+│   └── exp.xml
 ├── run/
 │   ├── create_run_xml.py
 │   ├── run.tsv
-│   ├── run.xml
+│   └── run.xml
 ├── runExpSubmit/
-│   ├── 0.add.submission.xml
+│   ├── add_submission.xml
+│   ├── modify_submission.xml
 │   ├── exp.xml
-│   ├── run.xml
-├── samSubmit/
-│   ├── 0.add.submission.xml
-│   ├── create_sam_xml.py
-│   ├── sam.tsv
-│   ├── sam.xml
+│   └── run.xml
+└── samSubmit/
+    ├── add_submission.xml
+    ├── modify_submission.xml
+    ├── create_sam_xml.py
+    ├── sam.tsv
+    └── sam.xml
 ```
 
 ## Scripts
 
 ###
+
+First set environment variables in terminal. This is a more secure way of handling credentials.
+```
+export U_NAME="your_username"
+export PASS_WORD="your_password"
+```
 
 The wrapper script make-submit-xml.sh generates and submit (or modify existing) ENA metadata objects in XML format, using programmatic submission (https://ena-docs.readthedocs.io/en/latest/submit/reads/programmatic.html).
 

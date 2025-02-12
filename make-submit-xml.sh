@@ -52,7 +52,7 @@ url="$test_url"
 cd samSubmit
 echo "Generating sample XML..."
 python3 create_sam_xml.py
-echo "Created sam.xml"
+echo "Created sam.xml\n"
 date
 
 echo "Submitting sample XML..."
@@ -71,7 +71,7 @@ cd ../exp
 echo "Generating experiment XML..."
 python3 create_exp_xml.py
 cp exp.xml ../runExpSubmit/
-echo "Created exp.xml"
+echo "Created exp.xml\n"
 date
 
 # Process RUN submission
@@ -79,7 +79,7 @@ cd ../run
 echo "Generating run XML..."
 python3 create_run_xml.py
 cp run.xml ../runExpSubmit/
-echo "Created run.xml"
+echo "Created run.xml\n"
 date
 
 # Submit RUN and EXPERIMENT data

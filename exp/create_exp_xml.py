@@ -151,7 +151,7 @@ if __name__ == '__main__':
     # Execute the TSV to XML conversion
     try:
         written_lines = tsv2XML(inFile, outFile)
-        print(f"\n{written_lines} experiment_objects successfully written to '{outFile}'.")
+        print(f"\t{written_lines} experiment_objects successfully written to '{outFile}'.")
     except FileNotFoundError:
         print(f"Error: The input file '{inFile}' was not found.")
         sys.exit(1)

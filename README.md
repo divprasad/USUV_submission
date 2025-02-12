@@ -23,6 +23,7 @@ export PASS_WORD="your_password"
 ```
 
 ---
+
 **Usage:**
 
 #### Automated submission
@@ -34,9 +35,6 @@ export PASS_WORD="your_password"
 ```
 
 `make-submit-xml.sh` integrates all the three subparts of the metadata generation (`create_sam_xml.py`, `create_exp_xml.py` , `create_run_xml.py`) and submits to testing/production service.
-
-
-
 
 
 

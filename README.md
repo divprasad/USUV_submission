@@ -35,11 +35,13 @@ python3 create_run_xml.py #converts the run.tsv file into run.xml file.
 
 ### Repository Structure
 
-After cloning the repo and executing the wrapper `make-submit-xml.sh`, you get this directory sturcture 
+After cloning the repo and executing the wrapper `make-submit-xml.sh`, you get this directory sturcture
 
 ```
 this_repo
 ├── .gitignore
+├── LICENSE
+├── README.md
 ├── make-submit-xml.sh
 ├── exp/
 │   ├── create_exp_xml.py
@@ -65,7 +67,6 @@ this_repo
 
 ---
 
-<<<<<<< HEAD
 First set environment variables in terminal. This is a more secure way of handling credentials.
 ```
 export U_NAME="your_username"
@@ -115,10 +116,7 @@ create_run_xml.py script converts the run.tsv file into run.xml file.
 python3 create_run_xml.py
 ```
 
-## Notes
-=======
 ### Notes  
->>>>>>> 0bde68039d067dce31eb35c971f0bf05efe739f6
 
 - Ensure that the sample metadata object is submitted before running the experiment and run scripts.
 - The TSV files must include all required fields for generating the metadata XML.

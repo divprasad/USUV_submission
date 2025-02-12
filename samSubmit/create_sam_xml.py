@@ -185,10 +185,10 @@ if __name__ == '__main__':
     # Execute the TSV to XML conversion
     try:
         COUNT=tsv2XML(inFile, outFile)
-        print(f"\t{COUNT} sample_objects successfully written to {outFile} XML file")
+        print(f"    {COUNT} sample_objects successfully written to '{outFile}'.")
     except FileNotFoundError:
-        print(f"Error: The file '{inFile}' does not exist.")
+        print(f"    Error: The file '{inFile}' does not exist.")
         sys.exit(1)
     except Exception as e:
-        print(f"An unexpected error occurred: {e}")
+        print(f"    An unexpected error occurred: {e}")
         sys.exit(1)
